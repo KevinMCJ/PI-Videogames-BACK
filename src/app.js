@@ -16,7 +16,7 @@ server.use(cookieParser());
 server.use(morgan('dev'));
 server.use((req, res, next) => {
   const allowedOrigins = [
-    'https://gamedex-pi.netlify.app/',
+    'https://gamedex-pi.netlify.app',
     'http://localhost:5173',
   ];
   const origin = req.headers.origin;
